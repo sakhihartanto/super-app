@@ -8,6 +8,7 @@ services:
       - 3001:3000
     volumes:
       - ./node:/app
+    image: sakhih/super-app-node-exercise
     depends_on:
       - php
       - db
@@ -20,6 +21,7 @@ services:
       - 80:80
     volumes:
       - ./php:/var/www/html
+    image: sakhih/super-app-php-exercise
     depends_on:
       - db
 
